@@ -6,7 +6,7 @@ KolekcjaKlientow::KolekcjaKlientow()
 {
 	for (size_t i = 0; i < LICZBA_KLIENTOW_W_BAZIE; i++) {
 		{
-			Klient *klient = new Klient(" IMIE", " NAZWISKO", i, 50);
+			Klient *klient = new Klient("IMIE", "NAZWISKO" + std::to_string(i), i, 50,"Haslo"+std::to_string(i));
 			listaKlientow.push_back(klient);
 		}
 	}

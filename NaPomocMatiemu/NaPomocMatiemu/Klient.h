@@ -13,14 +13,16 @@ class Wypozyczenie;
 class Klient
 {
 public:
-	Klient(string imie, string nazwisko, int numerKlienta, double bilans);
+	Klient(string imie, string nazwisko, int numerKlienta, double bilans,string haslo);
 	virtual ~Klient();
 	void jakiRabat();
 	void wypozycz(Pojazd* pojazd, string dataPoczatkowa);
 	void zwroc(Pojazd* pojazd);
+	string getNazwisko();
+	string getHaslo();
 	string wyswietl();
 
-	vector<Wypozyczenie *> wypozyczeniaBiezace;
+	vector<Wypozyczenie*> wypozyczeniaBiezace;
 
 protected:
 	string imie;
@@ -28,7 +30,7 @@ protected:
 	int numerKlienta;
 	double bilans;
 	Typ jakiTyp;
-	std::string has³o;
+	std::string haslo;
 
 private:
 	//vector<Klient *> klienci;
