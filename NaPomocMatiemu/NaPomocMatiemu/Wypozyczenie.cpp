@@ -28,6 +28,7 @@ void Wypozyczenie::jakiRachunek()
 
 void Wypozyczenie::wyswietl()
 {
+	cout << "Wypozyczenie" << endl;
 }
 
 Klient* Wypozyczenie::getKlient()

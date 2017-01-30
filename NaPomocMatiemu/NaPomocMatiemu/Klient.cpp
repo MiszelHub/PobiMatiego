@@ -4,7 +4,7 @@
 
 using namespace std;
 //add vector constructor
-Klient::Klient(string imie, string nazwisko, int numerKlienta, double bilans) :imie(imie), nazwisko(nazwisko), numerKlienta(numerKlienta), bilans(bilans), wypozyczeniaBiezace()
+Klient::Klient(string imie, string nazwisko, int numerKlienta, double bilans,string haslo) :imie(imie), nazwisko(nazwisko), numerKlienta(numerKlienta), bilans(bilans), wypozyczeniaBiezace(),haslo(haslo)
 {
 }
 
@@ -33,6 +33,16 @@ void Klient::zwroc(Pojazd* pojazd)
 			(*it)->jakiRachunek();
 		}
 	}
+}
+
+string Klient::getHaslo()
+{
+	return this->haslo;
+}
+
+string Klient::getNazwisko()
+{
+	return this->nazwisko;
 }
 
 string Klient::wyswietl()
