@@ -11,9 +11,10 @@ public:
 	string wyswietl();
 
 protected:
-
+	void obliczCeneBazow¹();
 private:
 	char segment;
+	double ObliczmodyfikatorSegmentuSilnika();
 };
 
 #endif // SAMOCHOD_H

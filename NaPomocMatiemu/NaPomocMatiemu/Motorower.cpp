@@ -9,3 +9,8 @@ Motorower::~Motorower()
 {
 	//dtor
 }
+
+void Motorower::obliczCeneBazow¹()
+{
+	this->cena *= obliczModyfikatorPojemnoœciSilnika();
+}

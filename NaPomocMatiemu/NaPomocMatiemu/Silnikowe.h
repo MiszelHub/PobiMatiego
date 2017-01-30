@@ -14,6 +14,7 @@ public:
 	double jakaCena();
 protected:
 	float silnik;
+	double obliczModyfikatorPojemnoœciSilnika();
 private:
 };
 

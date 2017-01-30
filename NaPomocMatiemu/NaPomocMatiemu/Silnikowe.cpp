@@ -22,7 +22,7 @@ string Silnikowe::wyswietl()
 
 double Silnikowe::jakaCena()
 {
-	if (silnik < 1000)
+	/*if (silnik < 1000)
 	{
 		return cena;
 	}
@@ -33,5 +33,31 @@ double Silnikowe::jakaCena()
 	else
 	{
 		return cena*(1 + ((silnik - 1000)*0.0005));
+	}*/
+	return cena;
+}
+
+double Silnikowe::obliczModyfikatorPojemnoœciSilnika()
+{
+	double modyfikator = 0.0;
+	if (this->silnik < 1000)
+	{
+		modyfikator = 1.0;
 	}
+	if ((this->silnik <= 2000) && (this->silnik >= 1000))
+	{
+		if (silnik <= 1500)
+		{
+			modyfikator = this->silnik*0.001;
+		}
+		else
+		{
+			modyfikator = 1.5;
+		}
+	}
+	if (this->silnik > 2000)
+	{
+		modyfikator = 2.0;
+	}
+	return modyfikator;
 }

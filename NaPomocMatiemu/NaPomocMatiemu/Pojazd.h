@@ -16,6 +16,7 @@ protected:
 	string producent;
 	string model;
 	double cena;
+	virtual void obliczCeneBazow¹();
 private:
 };
 

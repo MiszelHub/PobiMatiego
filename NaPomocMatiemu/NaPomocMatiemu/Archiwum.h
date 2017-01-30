@@ -3,7 +3,7 @@
 
 #include <vector>
 #include "Wypozyczenie.h"
-#include<memory>
+
 class Wypozyczenie;
 class Archiwum
 {

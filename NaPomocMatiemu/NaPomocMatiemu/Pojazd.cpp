@@ -3,7 +3,7 @@
 #include <sstream>
 Pojazd::Pojazd(int numer, string producent, string model) :numer(numer), producent(producent), model(model)
 {
-	//ctor
+	obliczCeneBazow¹();
 }
 
 Pojazd::~Pojazd()
@@ -21,4 +21,9 @@ string Pojazd::wyswietl() {
 double Pojazd::jakaCena()
 {
 	return cena;
+}
+
+void Pojazd::obliczCeneBazow¹()
+{
+	//
 }

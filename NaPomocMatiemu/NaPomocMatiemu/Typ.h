@@ -6,7 +6,7 @@ class Typ
 public:
 	Typ();
 	virtual ~Typ();
-	void obliczRabat();
+	void virtual obliczRabat();
 	void maxIloscWypozyczen();
 
 protected:

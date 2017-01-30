@@ -12,7 +12,6 @@ public:
 	string wyswietl();
 
 protected:
-
 private:
 	int a;
 };

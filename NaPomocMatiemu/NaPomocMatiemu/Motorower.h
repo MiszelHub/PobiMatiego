@@ -10,7 +10,7 @@ public:
 	virtual ~Motorower();
 
 protected:
-
+	void obliczCeneBazow¹();
 private:
 };
 
