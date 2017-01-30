@@ -70,7 +70,7 @@ int main()
 {
 	Lista_Wypozyczen *lWyp;
 	Archiwum archiwum;
-	Klient *klient=NULL;
+	Klient *klient = nullptr;
 
 	int z = 0;
 	string nazwisko, haslo;
@@ -91,10 +91,9 @@ int main()
 				klient = *it;
 			}
 		}
-		if (klient == NULL)
+		if (klient == nullptr)
 			cout << "Nieprawidlowe nazwisko lub haslo." << endl;
-
-	} while (klient == NULL);
+	} while (klient == nullptr);
 
 	while (z != 6)
 	{
@@ -128,7 +127,7 @@ int main()
 			cin >> numerPojazdu;
 			time_t  timev;
 			time(&timev);
-			dodajWypozyczenie(klient, stanPocz1->listaPojazdow.at(numerPojazdu),std::to_string(timev), lWyp);
+			dodajWypozyczenie(klient, stanPocz1->listaPojazdow.at(numerPojazdu), std::to_string(timev), lWyp);
 			break;
 		case 5:
 			break;

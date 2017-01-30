@@ -10,7 +10,7 @@ Typ::~Typ()
 	//dtor
 }
 
-void Typ::obliczRabat()
+double Typ::obliczRabat(double bilans)
 {
 }
 

@@ -8,7 +8,7 @@ class KlientA : public Typ
 public:
 	KlientA();
 	virtual ~KlientA();
-
+	double obliczRabat(double bilans);
 protected:
 
 private:

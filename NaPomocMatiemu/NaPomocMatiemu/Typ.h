@@ -6,14 +6,13 @@ class Typ
 public:
 	Typ();
 	virtual ~Typ();
-	void virtual obliczRabat();
+	double virtual obliczRabat(double bilans);
 	void maxIloscWypozyczen();
 
 protected:
-
-private:
 	char jakiTyp;
 	int ileSamochodow;
+private:
 };
 
 #endif // TYP_H

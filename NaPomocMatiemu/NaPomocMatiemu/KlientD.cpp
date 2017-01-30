@@ -8,3 +8,7 @@ KlientD::~KlientD()
 {
 	//dtor
 }
+
+double KlientD::obliczRabat(double bilans)
+{
+}

@@ -13,7 +13,7 @@ class Wypozyczenie;
 class Klient
 {
 public:
-	Klient(string imie, string nazwisko, int numerKlienta, double bilans,string haslo);
+	Klient(string imie, string nazwisko, int numerKlienta, double bilans, string haslo);
 	virtual ~Klient();
 	void jakiRabat();
 	void wypozycz(Pojazd* pojazd, string dataPoczatkowa);
