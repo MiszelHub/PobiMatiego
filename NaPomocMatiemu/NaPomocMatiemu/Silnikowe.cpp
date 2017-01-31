@@ -46,14 +46,7 @@ double Silnikowe::obliczModyfikatorPojemnoœciSilnika()
 	}
 	if ((this->silnik <= 2000) && (this->silnik >= 1000))
 	{
-		if (silnik <= 1500)
-		{
-			modyfikator = this->silnik*0.001;
-		}
-		else
-		{
-			modyfikator = 1.5;
-		}
+		modyfikator = (1 + ((silnik - 1000)*0.0005));
 	}
 	if (this->silnik > 2000)
 	{
