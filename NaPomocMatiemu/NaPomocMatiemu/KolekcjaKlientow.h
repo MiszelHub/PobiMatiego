@@ -12,7 +12,7 @@ public:
 	vector<Klient*> getListaKlientow();
 
 protected:
-
+	Typ losyjTypKienta();
 private:
 	vector<Klient*> listaKlientow;
 };

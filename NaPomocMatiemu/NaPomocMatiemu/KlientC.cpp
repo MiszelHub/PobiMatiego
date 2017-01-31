@@ -1,6 +1,6 @@
 #include "KlientC.h"
 
-KlientC::KlientC()
+KlientC::KlientC(std::string nazwaTypu) :Typ(nazwaTypu)
 {
 	//ctor
 }

@@ -6,7 +6,7 @@
 class KlientA : public Typ
 {
 public:
-	KlientA();
+	KlientA(std::string nazwaTypu);
 	virtual ~KlientA();
 	double obliczRabat(double bilans);
 protected:

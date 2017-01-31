@@ -51,7 +51,7 @@ string Klient::getNazwisko()
 string Klient::wyswietl()
 {
 	stringstream ss;
-	ss << "Imie: " << this->imie << " Nazwisko: " << this->nazwisko << " Numer klienta: " << this->numerKlienta << " Bilans: " << this->bilans << endl;
+	ss << "Imie: " << this->imie << " Nazwisko: " << this->nazwisko << " Numer klienta: " << this->numerKlienta << " Typ Klienta : " << this->jakiTyp.wyswietl() << " Bilans: " << this->bilans << endl;
 	string s = ss.str();
 	return s;
 }
