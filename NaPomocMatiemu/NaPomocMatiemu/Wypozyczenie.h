@@ -19,10 +19,11 @@ public:
 	virtual ~Wypozyczenie();
 	void noweWypozyczenie();
 	void archiwum(string dataKoncowa, Archiwum *archiwum);
-	void jakiRachunek();
+	void wystawRachunek();
 	void wyswietl();
 	Klient* getKlient();
 	Pojazd* getPojazd();
+	double getKoszt();
 	//list <Wypozyczenie*> wypozyczenia;
 protected:
 

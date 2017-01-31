@@ -21,9 +21,9 @@ void Wypozyczenie::archiwum(string dataKoncowa, Archiwum *archiwum)
 	archiwum->wypozyczenia.push_back(this);
 }
 
-void Wypozyczenie::jakiRachunek()
+void Wypozyczenie::wystawRachunek()
 {
-	//koszt = ileDni*getPojazd()->
+	this->koszt = this->getPojazd()->jakaCena() - this->getKlient()->getRabat();
 }
 
 void Wypozyczenie::wyswietl()
@@ -39,4 +39,9 @@ Klient* Wypozyczenie::getKlient()
 Pojazd* Wypozyczenie::getPojazd()
 {
 	return pojazd;
+}
+
+double Wypozyczenie::getKoszt()
+{
+	return koszt;
 }

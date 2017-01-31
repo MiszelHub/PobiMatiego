@@ -4,8 +4,10 @@
 
 using namespace std;
 //add vector constructor
-Klient::Klient(string imie, string nazwisko, int numerKlienta, double bilans,string haslo) :imie(imie), nazwisko(nazwisko), numerKlienta(numerKlienta), bilans(bilans), wypozyczeniaBiezace(),haslo(haslo)
+Klient::Klient(string imie, string nazwisko, int numerKlienta, double bilans, string haslo, Typ & typ)
+	:imie(imie), nazwisko(nazwisko), numerKlienta(numerKlienta), bilans(bilans), wypozyczeniaBiezace(), haslo(haslo), jakiTyp(typ)
 {
+	jakiRabat();
 }
 
 Klient::~Klient()
@@ -15,6 +17,7 @@ Klient::~Klient()
 
 void Klient::jakiRabat()
 {
+	this->jakiTyp.obliczRabat(bilans);
 }
 
 void Klient::wypozycz(Pojazd* pojazd, string dataPoczatkowa)
@@ -30,7 +33,7 @@ void Klient::zwroc(Pojazd* pojazd)
 	{
 		if ((*it)->getPojazd() == pojazd)
 		{
-			(*it)->jakiRachunek();
+			(*it)->wystawRachunek();
 		}
 	}
 }
@@ -51,4 +54,14 @@ string Klient::wyswietl()
 	ss << "Imie: " << this->imie << " Nazwisko: " << this->nazwisko << " Numer klienta: " << this->numerKlienta << " Bilans: " << this->bilans << endl;
 	string s = ss.str();
 	return s;
+}
+
+Typ & Klient::getTyp()
+{
+	return this->jakiTyp;
+}
+
+double Klient::getRabat()
+{
+	return this->rabat;
 }
